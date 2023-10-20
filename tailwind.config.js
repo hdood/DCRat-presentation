@@ -12,7 +12,7 @@ export default {
                     ...require('daisyui/src/theming/themes')['[data-theme=dark]'],
                     primary: 'white',
                     "primary-content" : 'dark',  
-                    base : "#191919"
+                    "base-100" : "#191919"
                 },
             },
         ],

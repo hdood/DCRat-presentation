@@ -11,6 +11,9 @@
 import { onMounted, ref } from 'vue';
 import Reveal from 'reveal.js';
 
+import Highlight from 'reveal.js/plugin/highlight/highlight.esm';
+import "reveal.js/plugin/highlight/monokai.css"
+
 const activeIndex = ref(1)
 
 onMounted(() => {
@@ -18,7 +21,7 @@ onMounted(() => {
     progress: true,
   })
   deck.initialize({
-    
+    plugins :[Highlight]
   });
   deck.on('slidechanged', event => {
     const slide =deck.getCurrentSlide(); 

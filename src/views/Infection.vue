@@ -18,7 +18,7 @@ import Layout from "../layouts/index.vue";
                     <div class="flex justify-center gap-3 items-center">
                         <div>Targets</div>
                     </div>
-                    <p class="text-2xlw">
+                    <p class="text-2xl">
                         RATs, in general, can target a wide range of victims, including individuals, small businesses, large
                         enterprises, government entities, activists, and more. They can be used for purposes such as data
                         theft,

@@ -2,18 +2,26 @@
 
 import Layout from "../layouts/index.vue"; 
 import Infection from "./Infection.vue";
+import Capabilities from "./Capabilities.vue";
+import Dammages from "./Dammages.vue";
+import Prevention from "./Prevention.vue";
 </script>
 
 <template>
   <Layout>
     <template #header="{ activeIndex }">
-      <div class="flex justify-between w-full  px-20  mt-5 text-base-content">
-
-        <div class="text-lg transition-all duration-200" :class="[activeIndex == 1 && ' scale-150 text-blue-500 font-semibold']">Remote Access Trojan</div>
-        <div class="text-lg transition-all duration-200" :class="[activeIndex == 2 && 'scale-150 text-blue-500 font-semibold']">Dark Crystal Rat</div>
-        <div class="text-lg transition-all duration-200" :class="[activeIndex == 3 && 'scale-150 text-blue-500 font-semibold']">Malware As A Service</div>
-        <div class="text-lg transition-all duration-200" :class="[activeIndex == 4 && 'scale-150 text-blue-500 font-semibold']">Infection</div>
-        <div class="text-lg transition-all duration-200" :class="[activeIndex == 5 && 'scale-150 text-blue-500 font-semibold']">Targets</div>
+      <div class="w-full  px-20  mt-5 ">
+        <div  class="transition-transform flex justify-between text-base-content duration-300" >
+          <div class="text-lg transition-all duration-200" :class="[activeIndex == 1 && ' scale-150 text-blue-500 font-semibold']">Remote Access Trojan</div>
+          <div class="text-lg transition-all duration-200" :class="[activeIndex == 2 && 'scale-150 text-blue-500 font-semibold']">Dark Crystal Rat</div>
+          <div class="text-lg transition-all duration-200" :class="[activeIndex == 3 && 'scale-150 text-blue-500 font-semibold']">Malware As A Service</div>
+          <div class="text-lg transition-all duration-200" :class="[activeIndex == 4 && 'scale-150 text-blue-500 font-semibold']">Infection</div>
+          <div class="text-lg transition-all duration-200" :class="[activeIndex == 5 && 'scale-150 text-blue-500 font-semibold']">Targets</div>
+          <div class="text-lg transition-all duration-200" :class="[activeIndex == 6 && 'scale-150 text-blue-500 font-semibold']">Capabilities</div>
+          <div class="text-lg transition-all duration-200" :class="[activeIndex == 7 && 'scale-150 text-blue-500 font-semibold']">Examples</div>
+          <div class="text-lg transition-all duration-200" :class="[activeIndex == 8 && 'scale-150 text-blue-500 font-semibold']">Dammages</div>
+          <div class="text-lg transition-all duration-200" :class="[activeIndex == 9 && 'scale-150 text-blue-500 font-semibold']">Prevention</div>
+        </div>
       </div>
     </template>
 
@@ -76,9 +84,11 @@ import Infection from "./Infection.vue";
       </section>
 
       <Infection />
+      <Capabilities />
+      <Dammages />
+      <Prevention />
 
     </template>
+
 </Layout>
-
-
 </template>
