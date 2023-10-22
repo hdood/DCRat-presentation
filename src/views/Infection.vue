@@ -14,7 +14,7 @@ import Layout from "../layouts/index.vue";
 
         <section data-index="5">
             <div class="">
-                <div class="p-4 rounded-xl border ">
+                <div class="p-4 rounded-xl border card glass">
                     <div class="flex justify-center gap-3 items-center">
                         <div>Targets</div>
                     </div>

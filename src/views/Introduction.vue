@@ -1,6 +1,6 @@
 <script setup>
 
-import Layout from "../layouts/index.vue"; 
+import Layout from "../layouts/index.vue";
 import Infection from "./Infection.vue";
 import Capabilities from "./Capabilities.vue";
 import Dammages from "./Dammages.vue";
@@ -11,16 +11,25 @@ import Prevention from "./Prevention.vue";
   <Layout>
     <template #header="{ activeIndex }">
       <div class="w-full  px-20  mt-5 ">
-        <div  class="transition-transform flex justify-between text-base-content duration-300" >
-          <div class="text-lg transition-all duration-200" :class="[activeIndex == 1 && ' scale-150 text-blue-500 font-semibold']">Remote Access Trojan</div>
-          <div class="text-lg transition-all duration-200" :class="[activeIndex == 2 && 'scale-150 text-blue-500 font-semibold']">Dark Crystal Rat</div>
-          <div class="text-lg transition-all duration-200" :class="[activeIndex == 3 && 'scale-150 text-blue-500 font-semibold']">Malware As A Service</div>
-          <div class="text-lg transition-all duration-200" :class="[activeIndex == 4 && 'scale-150 text-blue-500 font-semibold']">Infection</div>
-          <div class="text-lg transition-all duration-200" :class="[activeIndex == 5 && 'scale-150 text-blue-500 font-semibold']">Targets</div>
-          <div class="text-lg transition-all duration-200" :class="[activeIndex == 6 && 'scale-150 text-blue-500 font-semibold']">Capabilities</div>
-          <div class="text-lg transition-all duration-200" :class="[activeIndex == 7 && 'scale-150 text-blue-500 font-semibold']">Examples</div>
-          <div class="text-lg transition-all duration-200" :class="[activeIndex == 8 && 'scale-150 text-blue-500 font-semibold']">Dammages</div>
-          <div class="text-lg transition-all duration-200" :class="[activeIndex == 9 && 'scale-150 text-blue-500 font-semibold']">Prevention</div>
+        <div class="transition-transform flex justify-center text-base-content duration-300">
+          <div class="text-lg transition-all duration-200" v-if="activeIndex == 1"
+            :class="[activeIndex == 1 && ' scale-150 text-blue-500 font-semibold']">Remote Access Trojan</div>
+          <div class="text-lg transition-all duration-200" v-if="activeIndex == 2"
+            :class="[activeIndex == 2 && 'scale-150 text-blue-500 font-semibold']">Dark Crystal Rat</div>
+          <div class="text-lg transition-all duration-200" v-if="activeIndex == 3"
+            :class="[activeIndex == 3 && 'scale-150 text-blue-500 font-semibold']">Malware As A Service</div>
+          <div class="text-lg transition-all duration-200" v-if="activeIndex == 4"
+            :class="[activeIndex == 4 && 'scale-150 text-blue-500 font-semibold']">Infection</div>
+          <div class="text-lg transition-all duration-200" v-if="activeIndex == 5"
+            :class="[activeIndex == 5 && 'scale-150 text-blue-500 font-semibold']">Targets</div>
+          <div class="text-lg transition-all duration-200" v-if="activeIndex == 6"
+            :class="[activeIndex == 6 && 'scale-150 text-blue-500 font-semibold']">Capabilities</div>
+          <div class="text-lg transition-all duration-200" v-if="activeIndex == 7"
+            :class="[activeIndex == 7 && 'scale-150 text-blue-500 font-semibold']">Examples</div>
+          <div class="text-lg transition-all duration-200" v-if="activeIndex == 8"
+            :class="[activeIndex == 8 && 'scale-150 text-blue-500 font-semibold']">Dammages</div>
+          <div class="text-lg transition-all duration-200" v-if="activeIndex == 9"
+            :class="[activeIndex == 9 && 'scale-150 text-blue-500 font-semibold']">Prevention</div>
         </div>
       </div>
     </template>
@@ -28,7 +37,7 @@ import Prevention from "./Prevention.vue";
     <template #sections>
       <section data-index="1">
         <div class="">
-          <div class="p-4 rounded-xl border ">
+          <div class="p-4 rounded-xl border card glass">
             <div class="flex justify-center gap-3 items-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512">
                 <path fill="currentColor"
@@ -53,7 +62,7 @@ import Prevention from "./Prevention.vue";
 
       <section data-index="2">
         <div class="">
-          <div class="p-4 rounded-xl border relative ">
+          <div class="p-4 rounded-xl border relative  card glass">
             <div class="flex justify-center gap-3 items-center">
               <div>Dark</div>
               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
@@ -76,19 +85,19 @@ import Prevention from "./Prevention.vue";
 
       <section data-index="3">
         <div>
-          <div class="p-4 flex flex-col gap-4">            <div class="">
-            <img src="../assets/MAAS.svg" class="scale-110" alt="">
-          </div>
+          <div class="p-4 flex flex-col gap-4">
+            <div class="">
+              <img src="../assets/MAAS.svg" class="scale-110" alt="">
+            </div>
           </div>
         </div>
       </section>
 
-      <Infection />
-      <Capabilities />
-      <Dammages />
-      <Prevention />
+    <Infection />
+    <Capabilities />
+    <Dammages />
+    <Prevention />
 
-    </template>
+  </template>
 
-</Layout>
-</template>
+</Layout></template>

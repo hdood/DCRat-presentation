@@ -6,7 +6,7 @@ import Layout from "../layouts/index.vue";
 <template>
     <section data-index="6">
 
-        <ul class="max-w-xl space-y-1 text-xl list-disc list-inside p-10 rounded border">
+        <ul class="max-w-xl space-y-1 text-xl list-disc list-inside p-10 rounded border card glass">
 
             <li>
                 Browse the internet by using victims' machines.
@@ -21,7 +21,7 @@ import Layout from "../layouts/index.vue";
                 Compile and Executes C# code.
             </li>
             <li class="fragment">
-                Executes remote commmands.
+                Executes remote commands.
             </li>
             <li class="fragment">
                 Exfiltrate files.

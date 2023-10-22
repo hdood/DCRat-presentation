@@ -7,7 +7,7 @@ import Layout from "../layouts/index.vue";
     <section data-index="8">
 
         <div class="">
-            <div class="p-4 rounded-xl border flex flex-col gap-9">
+            <div class="p-4 rounded-xl border flex flex-col gap-9 card glass">
                 
                 <div class="flex justify-center gap-3 items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24">
